@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Progrev-11"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__body">
+			<div class="wrapper__main main">
+				<div class="main__body">
+					<div class="main__score-box score-box">
+						<div class="score-box__body">
+							<div class="score-box__icon icon-game"></div>
+							<div class="score-box__score score _fz-12">0</div>
+						</div>
+					</div>
+					<div class="main__buttons">
+						<button type="button" data-button="game" class="main__button button _fz-14 _fw-600"><span>Play
+								Game</span></button>
+						<button type="button" data-button="shop"
+							class="main__button button _fz-14 _fw-600"><span>Shop</span></button>
+						<button type="button" data-button="privacy" class="main__button button _fz-14 _fw-600"><span>Privacy
+								Policy</span></button>
+					</div>
+				</div>
+			</div>
+
+			@@include('html/_shop.htm',{})
+
+			@@include('html/_snake-game.htm',{})
+		</div>
+	</div>
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

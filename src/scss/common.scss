@@ -1,0 +1,91 @@
+.button {
+	position: relative;
+	z-index: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 112px;
+	height: 28px;
+
+	border-radius: 30px;
+	background: linear-gradient(180deg, #fdfeb0 0%, #f1a911 37.92%);
+
+	user-select: none;
+
+	transition: all 0.3s ease 0s;
+
+	span {
+		color: #fff;
+	}
+
+	&:active {
+		transform: translateY(2px);
+	}
+
+	// &._hold {
+	// 	opacity: 0.5;
+	// 	pointer-events: none;
+	// }
+}
+
+.button-home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 57px;
+	height: 26px;
+
+	border-radius: 13px;
+	background: linear-gradient(180deg, #f6fcff 0%, #b0e8ff 100%);
+
+	span {
+		background: linear-gradient(180deg, #2886e7 0%, #3866d9 100%);
+
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+[type="button"] {
+	transition: all 0.3s ease 0s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	&:active {
+		transform: translateY(3px);
+	}
+}
+
+//========================================================================================================================================================
+
+//========================================================================================================================================================
+
+.score {
+	white-space: nowrap;
+	&._no-money {
+		animation: no-money 0.7s ease 2;
+	}
+	&._delete-money {
+		animation: delete-money 0.7s ease;
+	}
+	&._anim-add-money {
+		animation: add-money 0.5s ease 3;
+	}
+}
+
+.icon-game {
+	&._anim-icon-jump {
+		animation: jump_icon 5s ease;
+	}
+	&._anim-icon-scale {
+		animation: scale_icon 0.5s ease 2;
+	}
+	&._anim-icon-rotate {
+		animation: rotate_icon 1.5s ease-out 1;
+	}
+	&._anim-icon-rotate-2 {
+		animation: rotate_icon-2 1.5s ease 1;
+	}
+}
+//========================================================================================================================================================

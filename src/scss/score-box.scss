@@ -1,0 +1,79 @@
+.score-box {
+	// .score-box__body
+
+	&__body {
+		position: relative;
+		z-index: 5;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		min-width: 120px;
+		height: 27px;
+
+		border-radius: 18.5px;
+		border: 1px solid #fff;
+		background: rgba(35, 35, 35, 0.59);
+
+		&._hold {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+	}
+	&__icon {
+	}
+
+	// .score-box__score
+	&__score {
+		min-width: 40px;
+		text-align: center;
+		color: #fff;
+	}
+}
+
+.icon-game {
+	width: 26px;
+	height: 26px;
+
+	background-image: url("@img/icons/coin.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.target-box {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	.main__score-box & {
+		opacity: 0;
+		visibility: hidden;
+	}
+	// .target-box__body
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 3px;
+
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 1;
+	}
+
+	// .target-box__text
+
+	&__text {
+		color: #fff;
+	}
+
+	// .target-box__count
+
+	&__count {
+		color: #61ff00;
+	}
+}

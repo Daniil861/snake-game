@@ -223,7 +223,7 @@ class WormGame {
 
 	// time
 	currentTime = 0;
-	timeLimit = 5; // speed snake
+	timeLimit = 25; // speed snake
 
 	worm?: Worm;
 
